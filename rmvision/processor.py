@@ -2,7 +2,7 @@ import os
 
 import numpy as np
 import cv2
-from naive.utils import get_bar_endpoints, pair_and_draw_armor_bars
+from rmvision.utils import get_bar_endpoints, pair_and_draw_armor_bars
 
 def process_frame(frame):
     BINARY_THRESHOLD = 200  # 二值化阈值

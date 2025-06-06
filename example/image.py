@@ -1,7 +1,7 @@
 import cv2 as cv
 from matplotlib import pyplot as plt
 import os
-from naive.processor import process_frame
+from rmvision.processor import process_frame
 
 input_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "input")
 

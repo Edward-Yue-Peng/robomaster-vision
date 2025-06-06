@@ -7,7 +7,11 @@ setup(
     author="Yue Peng",
     packages=find_packages(),
     install_requires=[
-        # Add your dependencies here, e.g. 'numpy', 'opencv-python'
+        *[
+            line.strip()
+            for line in open("requirements.txt")
+            if line.strip() and not line.startswith("#")
+        ],
     ],
     python_requires=">=3.6",
 )

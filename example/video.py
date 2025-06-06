@@ -1,6 +1,6 @@
 import cv2 as cv
 
-from naive.processor import process_frame
+from rmvision.processor import process_frame
 
 cap = cv.VideoCapture(0)
 
